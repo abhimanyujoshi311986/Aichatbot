@@ -50,7 +50,15 @@ export function ApiKeyGate({ children }: { children: ReactNode }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ apiKey: key }),
       });
-      const data = await res.json();
+      const responseText = await res.text();
+      let data: { error?: string; ok?: boolean } = {};
+      try {
+        data = JSON.parse(responseText);
+      } catch {
+        throw new Error(
+          `Server returned an unexpected response (${res.status}). Restart AISHA and try again.`,
+        );
+      }
       if (!res.ok) throw new Error(data.error || "Could not save the key.");
       setValue("");
       setPhase("ready");
