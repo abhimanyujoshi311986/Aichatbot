@@ -20,8 +20,8 @@ files:
 # The PyInstaller-frozen desktop agent (embeds its own Python runtime) is copied
 # verbatim into resources/agent, so the target machine needs no Python.
 extraResources:
-  - from: agent_dist/myraa-agent
-    to: agentmyraa
+  - from: agent_dist/aisha-agent
+    to: agentaisha
     filter: ["**/*"]
   - from: assets
     to: assets

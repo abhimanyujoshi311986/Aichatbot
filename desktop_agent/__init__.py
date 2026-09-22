@@ -1,7 +1,7 @@
-"""Aisha Desktop Control Agent.
+"""MYRAA Desktop Control Agent.
 
 A local FastAPI service exposing JARVIS-style desktop automation tools that
-Aisha's Node bridge (server.ts) calls over HTTP. This module package only
+MYRAA's Node bridge (server.ts) calls over HTTP. This module package only
 hosts tool code; run with:
 
     uvicorn desktop_agent.main:app --host 127.0.0.1 --port 8765

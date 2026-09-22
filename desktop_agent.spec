@@ -145,5 +145,5 @@ coll = COLLECT(
     strip=False,
     upx=False,
     upx_exclude=[],
-    name="myraa-agent",
+    name="aisha-agent",
 )

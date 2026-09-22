@@ -1075,7 +1075,7 @@ async function startServer() {
         JSON.stringify({
           type: "error",
           error:
-            "NO_API_KEY: Add your Gemini API key in Settings to start talking to Aisha.",
+            "NO_API_KEY: Add your Gemini API key in Settings to start talking to MYRAA.",
         }),
       );
       clientWs.close();

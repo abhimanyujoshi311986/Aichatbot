@@ -109,12 +109,12 @@ It delivers full-duplex, low-latency spoken conversations with native interrupti
 ### Option 1: Standalone Windows Executable (Recommended)
 
 1. Download the latest release from the [Releases](https://github.com/your-username/myraa-ai-assistant/releases) section or [`releases/`](releases/):
-   - **`Aisha.exe`**: Portable single-file executable (run immediately without installation).
-   - **`Aisha-Setup.exe`**: Guided installer with Start Menu and Desktop shortcuts.
-2. Double-click `Aisha.exe` to launch.
+   - **`Myraa.exe`**: Portable single-file executable (run immediately without installation).
+   - **`Myraa-Setup.exe`**: Guided installer with Start Menu and Desktop shortcuts.
+2. Double-click `Myraa.exe` to launch.
 3. On first boot, enter your Google Gemini API Key in the onboarding dialog.
 4. Allow microphone access when prompted.
-5. Say _"Hey Aisha"_ or press `Alt + Space` to start talking!
+5. Say _"Hey Myraa"_ or press `Alt + Space` to start talking!
 
 ### Option 2: Web / Browser Companion Mode
 
