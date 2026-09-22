@@ -20,10 +20,10 @@ const fs = require("fs");
 const http = require("http");
 const { spawn } = require("child_process");
 
-// Unified User Data Directory (%APPDATA%\MYRAA)
+// Unified User Data Directory (%APPDATA%\Aisha)
 const dataDir = path.join(
   process.env.APPDATA || path.join(process.env.USERPROFILE || "", "AppData", "Roaming"),
-  "MYRAA"
+  "Aisha"
 );
 const logsDir = path.join(dataDir, "logs");
 try {
@@ -88,7 +88,7 @@ function getServerEntry(appRoot) {
   return path.join(appRoot, "dist", "server.cjs");
 }
 
-logMain("--- MYRAA Electron Launching ---");
+logMain("--- Aisha Electron Launching ---");
 logMain(`dataDir: ${dataDir}`);
 logMain(`process.execPath: ${process.execPath}`);
 
@@ -140,9 +140,9 @@ function startBackend() {
     throw new Error(err);
   }
 
-  const agentExe = fs.existsSync(path.join(process.resourcesPath, "agent", "myraa-agent.exe"))
-    ? path.join(process.resourcesPath, "agent", "myraa-agent.exe")
-    : path.join(appRoot, "agent_dist", "myraa-agent", "myraa-agent.exe");
+  const agentExe = fs.existsSync(path.join(process.resourcesPath, "agent", "aisha-agent.exe"))
+    ? path.join(process.resourcesPath, "agent", "aisha-agent.exe")
+    : path.join(appRoot, "agent_dist", "aisha-agent", "aisha-agent.exe");
 
   const env = {
     ...process.env,
@@ -182,8 +182,8 @@ function startBackend() {
     logMain(`Backend process exited with code ${code}, signal ${signal}`);
     if (!isQuitting) {
       dialog.showErrorBox(
-        "MYRAA backend stopped",
-        `The MYRAA backend process exited unexpectedly (code ${code}, signal ${signal}).`,
+        "Aisha backend stopped",
+        `The Aisha backend process exited unexpectedly (code ${code}, signal ${signal}).`,
       );
       app.quit();
     }
@@ -261,12 +261,12 @@ function createTrayIcon() {
 function createTray() {
   const icon = createTrayIcon();
   tray = new Tray(icon);
-  tray.setToolTip("MYRAA — AI Voice Assistant (Online)");
+  tray.setToolTip("Aisha — AI Voice Assistant (Online)");
 
   const updateMenu = () => {
     const contextMenu = Menu.buildFromTemplate([
       {
-        label: "Open MYRAA",
+        label: "Open Aisha",
         click: () => {
           if (mainWindow) {
             mainWindow.show();
@@ -300,7 +300,7 @@ function createTray() {
         },
       },
       {
-        label: "Restart MYRAA",
+        label: "Restart Aisha",
         click: () => {
           if (mainWindow) {
             mainWindow.webContents.reload();
@@ -309,7 +309,7 @@ function createTray() {
       },
       { type: "separator" },
       {
-        label: "Exit MYRAA",
+        label: "Exit Aisha",
         click: () => {
           isQuitting = true;
           app.quit();
@@ -374,7 +374,7 @@ function createMainWindow() {
     show: false,
     backgroundColor: "#0a0a0f",
     autoHideMenuBar: true,
-    title: "MYRAA",
+    title: "Aisha",
     webPreferences: {
       preload: path.join(__dirname, "preload.cjs"),
       contextIsolation: true,
@@ -438,11 +438,11 @@ ipcMain.on("myraa:toggle-listening", (_e, active) => {
 // ---------------------------------------------------------------------------
 async function bootstrap() {
   logMain("Bootstrap started.");
-  app.setAppUserModelId("com.myraa.desktop");
+  app.setAppUserModelId("com.aisha.desktop");
   createSplashWindow();
   logMain("Splash window created.");
 
-  // Register Global Shortcuts (Summon MYRAA from anywhere)
+  // Register Global Shortcuts (Summon Aisha from anywhere)
   try {
     globalShortcut.register("CommandOrControl+Shift+Space", toggleMainWindow);
     globalShortcut.register("Alt+Space", toggleMainWindow);

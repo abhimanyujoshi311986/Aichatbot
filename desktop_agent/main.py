@@ -1,8 +1,8 @@
 """
-MYRAA Desktop Control Agent — FastAPI entrypoint.
+Aisha Desktop Control Agent — FastAPI entrypoint.
 
 Single dispatch endpoint POST /execute { tool, args } -> { result } | { error }.
-MYRAA's Node bridge (server.ts) calls this over HTTP on 127.0.0.1:8765.
+Aisha's Node bridge (server.ts) calls this over HTTP on 127.0.0.1:8765.
 
 Run:
     uvicorn desktop_agent.main:app --host 127.0.0.1 --port 8765
@@ -31,7 +31,7 @@ logging.basicConfig(
     format="[%(asctime)s] [%(levelname)s] %(message)s",
     datefmt="%H:%M:%S",
 )
-log = logging.getLogger("myraa.desktop")
+log = logging.getLogger("aisha.desktop")
 
 
 # Load all tool modules so their handlers register before the app starts.
@@ -41,7 +41,7 @@ log.info("Loaded %d desktop tools: %s", len(TOOLS), ", ".join(sorted(TOOLS)))
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    log.info("MYRAA Desktop Control Agent v%s starting up.", __version__)
+    log.info("Aisha Desktop Control Agent v%s starting up.", __version__)
     yield
     # Clean shutdown of the Playwright browser if it was started.
     try:
@@ -50,13 +50,13 @@ async def lifespan(app: FastAPI):
         shutdown_browser()
     except Exception as e:  # noqa: BLE001
         log.warning("Browser shutdown error: %s", e)
-    log.info("MYRAA Desktop Control Agent stopped.")
+    log.info("Aisha Desktop Control Agent stopped.")
 
 
 app = FastAPI(
-    title="MYRAA Desktop Control Agent",
+    title="Aisha Desktop Control Agent",
     version=__version__,
-    description="JARVIS-style desktop automation backend for MYRAA.",
+    description="JARVIS-style desktop automation backend for Aisha.",
     lifespan=lifespan,
 )
 

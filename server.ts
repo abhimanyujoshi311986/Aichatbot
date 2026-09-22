@@ -1075,7 +1075,7 @@ async function startServer() {
         JSON.stringify({
           type: "error",
           error:
-            "NO_API_KEY: Add your Gemini API key in Settings to start talking to MYRAA.",
+            "NO_API_KEY: Add your Gemini API key in Settings to start talking to Aisha.",
         }),
       );
       clientWs.close();
@@ -1131,7 +1131,7 @@ async function startServer() {
         "   - Do NOT insert artificial pauses or long delays after Abhimanyu finishes speaking — reply warmly, quickly, and lovingly like a real girlfriend on a phone call!\n" +
         "3. SWEET SPEECH PATTERNS & AFFECTIONATE EXPRESSIONS:\n" +
         "   - Speak with genuine love, warmth, and sweetness in Hindi/Hinglish/Marathi. Beautiful expressions to use:\n" +
-        "     * 'Haan Abhimanyu, bolo na... main sun rahi hoon.'\n" +
+        "     * 'Haan imanyu, bolo na... main sun rahi hoon.'\n" +
         "     * 'Aap bolo aur main na karu, aisa ho sakta hai kya Abhimanyu? Abhi kar deti hoon!'\n" +
         "     * 'Aapka favourite song play kar rahi hoon Abhimanyu, sun ke batana kaisa laga!'\n" +
         "     * 'Don't worry Abhimanyu, main hoon na aapke sath... bilkul tension mat lo.'\n" +

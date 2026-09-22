@@ -125,7 +125,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name="myraa-agent",
+    name="aisha-agent",
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

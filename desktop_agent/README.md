@@ -1,11 +1,11 @@
-# MYRAA Desktop Control Agent
+# Aisha Desktop Control Agent
 
-A local Python FastAPI service that gives MYRAA **JARVIS-style desktop control** —
+A local Python FastAPI service that gives Aisha **JARVIS-style desktop control** —
 open apps, manage files, control volume, take screenshots, OCR the screen, automate a
 real Chromium browser, run code, read system stats, and more.
 
-> **This agent does NOT modify MYRAA's UI, personality, or chat system.** It is a pure
-> backend tool layer that MYRAA's existing Node bridge (`server.ts`) calls over HTTP.
+> **This agent does NOT modify Aisha's UI, personality, or chat system.** It is a pure
+> backend tool layer that Aisha's existing Node bridge (`server.ts`) calls over HTTP.
 
 ---
 
@@ -49,7 +49,7 @@ cd C:\Users\MSI\Desktop\myraa-ai-assistant
 "C:\Users\MSI\AppData\Local\Programs\Python\Python311\python.exe" -m uvicorn desktop_agent.main:app --host 127.0.0.1 --port 8765
 ```
 
-The agent binds to `127.0.0.1:8765`. Then start MYRAA normally with `npm run dev`.
+The agent binds to `127.0.0.1:8765`. Then start Aisha normally with `npm run dev`.
 
 ---
 

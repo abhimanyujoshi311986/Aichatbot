@@ -1,6 +1,6 @@
-appId: com.myraa.desktop
-productName: MYRAA
-copyright: Copyright © 2026 MYRAA
+appId: com.aisha.desktop
+productName: Aisha
+copyright: Copyright © 2026 Aisha
 
 directories:
   output: release
@@ -41,8 +41,8 @@ nsis:
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
   createStartMenuShortcut: true
-  shortcutName: MYRAA
-  artifactName: Myraa-Setup.${ext}
+  shortcutName: Aisha
+  artifactName: Aisha-Setup.${ext}
 
 portable:
-  artifactName: Myraa.${ext}
+  artifactName: Aisha.${ext}

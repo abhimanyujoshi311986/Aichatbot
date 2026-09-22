@@ -1,4 +1,4 @@
-# 🎙️ MYRAA — Autonomous AI Voice Assistant
+# 🎙️ Aisha — Autonomous AI Voice Assistant
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D6.svg)](https://microsoft.com)
 
-**MYRAA** is a system-wide, autonomous AI voice companion powered by **Google Gemini Live Native Audio** (`gemini-2.5-flash-native-audio-latest`).
+**Aisha** is a system-wide, autonomous AI voice companion powered by **Google Gemini Live Native Audio** (`gemini-2.5-flash-native-audio-latest`).
 
 It delivers full-duplex, low-latency spoken conversations with native interruption (barge-in), long-term cognitive memory, multimodal real-time screen vision, and 52+ native Windows OS control tools.
 
@@ -109,12 +109,12 @@ It delivers full-duplex, low-latency spoken conversations with native interrupti
 ### Option 1: Standalone Windows Executable (Recommended)
 
 1. Download the latest release from the [Releases](https://github.com/your-username/myraa-ai-assistant/releases) section or [`releases/`](releases/):
-   - **`Myraa.exe`**: Portable single-file executable (run immediately without installation).
-   - **`Myraa-Setup.exe`**: Guided installer with Start Menu and Desktop shortcuts.
-2. Double-click `Myraa.exe` to launch.
+   - **`Aisha.exe`**: Portable single-file executable (run immediately without installation).
+   - **`Aisha-Setup.exe`**: Guided installer with Start Menu and Desktop shortcuts.
+2. Double-click `Aisha.exe` to launch.
 3. On first boot, enter your Google Gemini API Key in the onboarding dialog.
 4. Allow microphone access when prompted.
-5. Say _"Hey Myraa"_ or press `Alt + Space` to start talking!
+5. Say _"Hey Aisha"_ or press `Alt + Space` to start talking!
 
 ### Option 2: Web / Browser Companion Mode
 
@@ -334,5 +334,6 @@ _(Add your preferred Open Source License, e.g. MIT or Apache-2.0, prior to publi
 
 ---
 
-#   A i c h a t b o t  
+#   A i c h a t b o t 
+ 
  
