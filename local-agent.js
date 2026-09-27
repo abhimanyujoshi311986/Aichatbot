@@ -1,17 +1,3 @@
-run /**
- * Myraa Playwright Local Agent Server
- * Run this locally on your machine to grant Myraa real control over your browser!
- * 
- * Setup instructions:
- * 1. Make sure you have Node.js installed.
- * 2. In a clean folder on your local computer, create 'local-agent.js' pasting this content.
- * 3. Run: npm install playwright express cors
- * 4. Run: npx playwright install chromium
- * 5. Launch the server: node local-agent.js
- * 
- * This server binds to port 3001 on localhost, permitting Myraa's web portal to issue
- * real-time Playwright actions directly on your physical computer.
- */
 /**
  * Myraa Playwright Local Agent Server
  * Run this locally on your machine to grant Myraa real control over your browser!
